@@ -41,6 +41,10 @@ header{
     text-decoration: none;
 }
 
+.logo:hover{
+    color: #E7F6F2;
+}
+
 nav{
     margin-right: 20px;
 }

@@ -1,0 +1,33 @@
+#main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #E7F6F2;
+    min-height: 100vh;
+}
+
+form{
+    text-align: center;
+}
+
+.contact-container{
+   margin-left: 40%; 
+}
+
+.input-container{
+    margin: 15px 0;
+}
+
+section{
+    padding: 0 0;
+}
+
+#errors{
+    color: red;
+}
+
+#ok{
+    color: green;
+}
+

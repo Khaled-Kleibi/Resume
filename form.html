@@ -1,0 +1,109 @@
+<!--assingment 2 Khaled Kleibi 2040015-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/form.css">
+    <script src="https://kit.fontawesome.com/5e2b69bb97.js" crossorigin="anonymous"></script>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,500;1,200&display=swap" rel="stylesheet">
+    <!--boot strap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">KHALED KLEIBI</a>
+        <nav>
+            <a href="#aboutMe">About Me</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contactMe">Contact Me</a>                  
+        </nav>
+    </header>
+    
+    <section id="main">
+        <div class="contact-container"></div>
+        <form method="post" id="myform" action="/process">   
+            <div class="input-container">
+              <label>First Name:</label>
+              <input type="text" placeholder="E.g. Nasser" name="fname" id="fname" maxlength="35" autofocus pattern="[A-Za-z ]+" required>
+              <div>
+                <label id="fnameLabel"></label>
+              </div>
+            </div>
+      
+            <div class="input-container">
+              <label>Last Name:</label>
+              <input type="text" placeholder="E.g. Kleibi" name="lname" id="lname" maxlength="35" pattern="[A-Za-z ]+" required>
+              <div>
+                <label id="lnameLabel"></label>
+              </div>
+            </div>
+      
+            <div class="input-container">
+              <label for="gender">gender:</label>
+              <select name="gender" id="gender">
+                <option value="male" selected>male</option>
+                <option value="female">female</option>
+              </select>
+            </div>
+            
+            <div class="input-container">
+              <label>Tel:</label>
+              <input type="tel" name="mobile" id="mobile" minlength="10" maxlength="10" placeholder="05xxxxxxxx" pattern="[0-9]{10}" required>
+              <div>
+                <label id="telLabel"></label>
+              </div>
+            </div>
+
+            <div class="input-container">
+                <label>Email:</label>
+                <input type="email" id ="email" name="email" placeholder="E.g. Nasser@gmail.com" pattern="[A-Za-z0-9]+@[a-z]+\.[a-z]{2,4}" required>
+                <div>
+                  <label id="emailLabel"></label>
+                </div>
+            </div>
+      
+            <div class="input-container"> 
+            <label for="service">service:</label>
+              <select name="service" id="service">
+                <option value="Website development" selected>Website development</option>
+                <option value="Compititve programming training">Compititve programming training</option>
+              </select>
+            </div>
+            
+            <div class="input-container">
+              <label >detail about the service:</label>
+              <textarea id='details' name= 'details' rows='5' cols='20'></textarea>
+            </div>
+            <p id="errors"></p>
+            <p id="ok"></p>
+      
+            <input class="btn-nav btn btn-secondary btn-lg" type="submit" formnovalidate>
+            <input class="btn-nav btn btn-secondary btn-lg" type="reset">
+          
+          </form>
+    </section>
+
+    <footer id="footer">
+        <p>© Copyright Khaled Kleibi</p>
+    </footer> 
+
+
+    <!--scripts-->
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+    <script src="../JS/form.js"></script>
+    
+    
+    
+</body>
+</html>
